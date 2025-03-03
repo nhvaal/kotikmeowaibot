@@ -1,16 +1,9 @@
-import os
 import logging
 import asyncio
 import requests
-from dotenv import load_dotenv
+from config import API_TOKEN,OPENROUTER_API_KEY
 from aiogram.filters import Command
 from aiogram import Bot, Dispatcher, types
-
-# Загружаю переменные окружения из .env
-load_dotenv()
-
-API_TOKEN = os.getenv("API_TOKEN")
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 logging.basicConfig(level=logging.INFO)
 
